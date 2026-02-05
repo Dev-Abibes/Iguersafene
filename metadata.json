@@ -1,0 +1,7 @@
+{
+  "name": "Iguersafene - Village du Monde",
+  "description": "Portail officiel d'Iguersafene, Village du Monde. Informations administratives, culturelles et environnementales.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
