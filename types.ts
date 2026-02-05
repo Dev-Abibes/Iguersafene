@@ -38,6 +38,7 @@ export interface GalleryMedia {
   url: string;
   thumbnail?: string;
   title: string;
+  description?: string;
   category: 'Paysage' | 'Événement' | 'Vie Quotidienne' | 'Patrimoine';
 }
 

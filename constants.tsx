@@ -23,7 +23,6 @@ export const VILLAGE_FAMILIES = [
   'Raab', 'Sahed', 'Saichi', 'Zenine', 'Zerioul', 'Zerifi'
 ];
 
-// Base historique réelle avec dates complètes
 const BASE_MARTYRS: Martyr[] = [
   {
     id: 'm1',
@@ -72,7 +71,6 @@ const BASE_MARTYRS: Martyr[] = [
   }
 ];
 
-// Génération des 94 autres martyrs avec des dates complètes aléatoires
 const firstNames = ['Amar', 'Hocine', 'Belaid', 'Salem', 'Rabah', 'Ali', 'Malek', 'Idir', 'Sadek', 'Lounis', 'Kamel', 'Ahmed', 'Ramdane', 'Youcef', 'Zahir'];
 const placeholderImage = 'https://images.unsplash.com/photo-1518005020250-675f0f0fd172?auto=format&fit=crop&q=80&w=400';
 
@@ -98,24 +96,74 @@ export const MARTYRS: Martyr[] = [...BASE_MARTYRS, ...GENERATED_MARTYRS];
 
 export const NEWS: NewsItem[] = [
   {
-    id: 'battue-sangliers',
-    title: 'Régulation : Organisation d\'une battue collective aux sangliers',
-    summary: 'Pour protéger les récoltes et assurer la sécurité des villageois, une battue administrative sera organisée ce samedi.',
-    content: `Face à la multiplication des dégâts causés aux vergers et aux jardins potagers, Tajmaât, en concertation avec les services des forêts, organise une battue collective de régulation.\n\nLe rassemblement des chasseurs se fera à 6h00 sur la place du village. Nous appelons les randonneurs et les bergers à la plus grande vigilance et à éviter les zones boisées du versant nord durant toute la matinée.\n\nCette action s'inscrit dans une gestion équilibrée de notre écosystème montagnard.`,
-    date: '2024-05-24',
-    category: 'Environnement',
-    image: 'https://images.unsplash.com/photo-1590424600642-0268ecdf2c76?auto=format&fit=crop&q=80&w=800',
-    tags: ['Chasse', 'Sécurité', 'Nature']
+    id: 'tissage-tapis',
+    title: 'Le Tissage n n-Azetta : Trame de notre histoire',
+    summary: 'Les femmes d\'Iguersafene maintiennent vivant l\'art du tissage traditionnel des tapis et des burnous.',
+    content: `Le métier à tisser vertical (Azetta) est une pièce centrale de la maison traditionnelle kabyle. À Iguersafene, l'association "Ithran" a lancé un programme de transmission pour que les jeunes filles apprennent à manipuler la laine et à créer les motifs ancestraux.\n\nChaque losange, chaque ligne brisée raconte une protection, une fertilité ou un hommage à la nature. Utiliser la laine locale, la teindre avec des extraits de plantes de l'Akfadou et passer des heures à croiser les fils est un exercice de patience et de dévotion culturelle.`,
+    date: '2024-05-28',
+    category: 'Culture',
+    image: 'https://images.unsplash.com/photo-1576016773322-80c2793d5159?auto=format&fit=crop&q=80&w=800',
+    tags: ['Tissage', 'Femmes', 'Artisanat']
   },
   {
-    id: 'tourisme-montagne',
-    title: 'Tourisme vert : Iguersafene, destination phare du Djurdjura',
-    summary: 'Le village attire de plus en plus de visiteurs en quête d\'authenticité et de nature préservée.',
-    content: `Avec son altitude de 890m et sa proximité avec la forêt d'Akfadou, Iguersafene devient une étape incontournable pour le tourisme de montagne. \n\nLa mairie travaille actuellement sur l'aménagement de sentiers de randonnée balisés et la promotion du gîte chez l'habitant. L'objectif est de développer une économie touristique durable qui respecte notre calme et nos traditions.\n\nLes visiteurs sont invités à respecter la charte de propreté qui fait la renommée de notre village.`,
-    date: '2024-05-23',
+    id: 'aknari-cueillette',
+    title: 'Aknari : La saison des figues de Barbarie commence',
+    summary: 'Le fruit piquant de l\'été est à l\'honneur cette semaine dans les vergers entourant le village.',
+    content: `C'est une tradition qui ne manque jamais de piquant. Les figues de Barbarie (Aknari) arrivent à maturité. Munis de leurs longues perches en roseau (Aqqej), les villageois cueillent les fruits dès l'aube pour éviter les piqûres.\n\nCe fruit est essentiel à notre alimentation estivale et fait l'objet de partages chaleureux entre voisins. On en profite pour rappeler l'importance de préserver les haies de cactus qui servent aussi de remparts naturels contre l'érosion du sol sur nos pentes escarpées.`,
+    date: '2024-05-27',
     category: 'Économie',
+    image: 'https://images.unsplash.com/photo-1596384033288-0818276f5f67?auto=format&fit=crop&q=80&w=800',
+    tags: ['Nature', 'Alimentation', 'Été']
+  },
+  {
+    id: 'gastronomie-seksou',
+    title: 'Gastronomie : Le secret du Seksou aux herbes sauvages',
+    summary: 'Redécouvrez le couscous traditionnel préparé avec les plantes médicinales de nos montagnes.',
+    content: `Le couscous d'Iguersafene ne se résume pas à la semoule. Il est l'expression de la biodiversité du Djurdjura. Les femmes ramassent avec soin le pouliot (Fliou), la menthe sauvage et d'autres herbes pour parfumer la sauce.\n\nCe plat est souvent servi lors de la Tiwizi ou des grandes réunions de Tajmaât, car il symbolise la force de la terre et la santé de ceux qui la travaillent. Une dégustation a été organisée hier pour les visiteurs, qui ont été surpris par la finesse des saveurs herbacées.`,
+    date: '2024-05-26',
+    category: 'Culture',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800',
+    tags: ['Cuisine', 'Plantes', 'Santé']
+  },
+  {
+    id: 'lweziaa-2024',
+    title: 'La Lweziâa : Un symbole millénaire de partage et d\'équité',
+    summary: 'Le village d\'Iguersafene perpétue la tradition de la Lweziâa, renforçant les liens sociaux à travers le partage communautaire de viande.',
+    content: `La tradition de la Lweziâa (ou Timechret) reste l'un des piliers de la solidarité à Iguersafene. Organisée par Tajmaât, cette cérémonie consiste à sacrifier des bœufs et à distribuer la viande de manière strictement égale entre tous les foyers du village, indépendamment de leur situation financière.\n\nCe rite, au-delà de son aspect nutritif, est un acte de justice sociale et de fraternité. Cette année encore, l'événement a rassemblé des centaines de villageois, y compris ceux résidant à l'étranger, venus spécialement pour l'occasion. C'est un moment où l'on oublie les différends pour ne former qu'une seule et grande famille.`,
+    date: '2024-05-15',
+    category: 'Culture',
+    image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=800',
+    tags: ['Tradition', 'Solidarité', 'Kabylie']
+  },
+  {
+    id: 'tiwizi-chemins',
+    title: 'Tiwizi : Quand l\'effort collectif transforme le village',
+    summary: 'Les citoyens se mobilisent pour l\'entretien des sentiers forestiers dans une ambiance de fraternité et de chants.',
+    content: `L'esprit de la "Tiwizi" ne faiblit pas à Iguersafene. Ce week-end, l'appel de Tajmaât pour le nettoyage et l'aménagement des sentiers menant vers la forêt d'Akfadou a été entendu par plus de 200 volontaires de tous âges.\n\nPelles, pioches et débroussailleuses en main, les villageois ont travaillé côte à côte. Comme le veut la coutume, les femmes ont préparé un repas collectif pour les travailleurs, tandis que les chants traditionnels accompagnaient le labeur. Cette action citoyenne permet notemment de préserver notre environnement, mais aussi de préparer la saison estivale pour les randonneurs.`,
+    date: '2024-05-10',
+    category: 'Environnement',
     image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800',
-    tags: ['Tourisme', 'Montagne', 'Développement']
+    tags: ['Tiwizi', 'Écologie', 'Citoyenneté']
+  },
+  {
+    id: 'vannerie-art',
+    title: 'Vannerie : L\'art du roseau et de l\'osier renaît',
+    summary: 'Un maître vannier d\'Idjeur transmet ses techniques de tressage aux jeunes du village.',
+    content: `Les paniers (Icheouaryen) et les corbeilles ne sont plus délaissés pour le plastique. À Iguersafene, la tendance est au retour aux matériaux naturels. Un atelier de vannerie a été mis en place pour apprendre à tresser le roseau sauvage et l'osier.\n\nCes objets utilitaires sont devenus de véritables pièces de décoration très prisées. Le maître vannier souligne que le secret réside dans le séchage et la flexibilité de la fibre. "C'est un dialogue entre mes doigts et la tige", explique-t-il avec passion.`,
+    date: '2024-05-05',
+    category: 'Culture',
+    image: 'https://images.unsplash.com/photo-1590632313364-0738e4a9e598?auto=format&fit=crop&q=80&w=800',
+    tags: ['Artisanat', 'Tradition', 'Nature']
+  },
+  {
+    id: 'yennayer-celebration',
+    title: 'Yennayer 2974 : Le village célèbre ses racines berbères',
+    summary: 'Un riche programme culturel a marqué le passage au nouvel an amazigh, entre gastronomie et traditions ancestrales.',
+    content: `Iguersafene a célébré le passage à l'an 2974 dans une effervescence culturelle remarquable. La place du village s'est transformée en un véritable théâtre à ciel ouvert avec des expositions de robes kabyles, de poteries et de produits du terroir.\n\nLe clou de la journée fut le concours du meilleur couscous de sept légumes ("Imensi n Yennayer"), suivi d'une soirée musicale animée par les jeunes talents locaux. "Célébrer Yennayer, c'est réaffirmer notre attachement à notre identité millénaire", a déclaré l'un des organisateurs du comité culturel Ithran.`,
+    date: '2024-01-12',
+    category: 'Culture',
+    image: 'https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&q=80&w=800',
+    tags: ['Yennayer', 'Amazigh', 'Patrimoine']
   }
 ];
 
@@ -141,11 +189,191 @@ export const EVENTS: EventItem[] = [
 ];
 
 export const GALLERY: GalleryMedia[] = [
-  { id: 'g1', type: 'image', url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800', title: 'Vue panoramique du village', category: 'Paysage' },
-  { id: 'g2', type: 'image', url: 'https://images.unsplash.com/photo-1470252649358-96949c7512c9?auto=format&fit=crop&q=80&w=800', title: 'Coucher de soleil sur les montagnes', category: 'Paysage' },
-  { id: 'g3', type: 'image', url: 'https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&q=80&w=800', title: 'Marché traditionnel', category: 'Vie Quotidienne' },
-  { id: 'g4', type: 'image', url: 'https://images.unsplash.com/photo-1541746972996-4e0b0f43e01a?auto=format&fit=crop&q=80&w=800', title: 'Réunion du comité', category: 'Patrimoine' },
-  { id: 'g5', type: 'video', url: 'https://www.w3schools.com/html/mov_bbb.mp4', thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=800', title: 'Vidéo promotionnelle 2024', category: 'Événement' },
+  { 
+    id: 'g1', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800', 
+    title: 'Vue panoramique du village', 
+    description: 'Une vue époustouflante depuis le versant nord, montrant l\'implantation harmonieuse du village sur la crête montagneuse.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g2', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1470252649358-96949c7512c9?auto=format&fit=crop&q=80&w=800', 
+    title: 'Coucher de soleil sur les montagnes', 
+    description: 'Les reflets dorés de la fin de journée sur les sommets du Djurdjura, vus depuis la place principale du village.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g3', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Marché traditionnel', 
+    description: 'L\'effervescence du marché local où les produits du terroir sont mis à l\'honneur chaque semaine.',
+    category: 'Vie Quotidienne' 
+  },
+  { 
+    id: 'g4', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1541746972996-4e0b0f43e01a?auto=format&fit=crop&q=80&w=800', 
+    title: 'Réunion du comité', 
+    description: 'La Tajmaât en pleine délibération sous le grand chêne, perpétuant une démocratie directe millénaire.',
+    category: 'Patrimoine' 
+  },
+  { 
+    id: 'g5', 
+    type: 'video', 
+    url: 'https://www.w3schools.com/html/mov_bbb.mp4', 
+    thumbnail: 'https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=800', 
+    title: 'Vidéo promotionnelle 2024', 
+    description: 'Un voyage cinématographique au cœur d\'Iguersafene, entre traditions kabyles et modernité citoyenne.',
+    category: 'Événement' 
+  },
+  { 
+    id: 'g6', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&q=80&w=800', 
+    title: 'Forêt d\'Akfadou', 
+    description: 'Immersion dans la forêt de cèdres et de chênes zéens qui borde le village, poumon vert de la région.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g7', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&q=80&w=800', 
+    title: 'Lac de montagne', 
+    description: 'Un point d\'eau naturel au détour d\'un sentier de randonnée, lieu de calme et de méditation pour les villageois.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g8', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Champs d\'oliviers', 
+    description: 'Les oliveraies ancestrales d\'Iguersafene, source de la fameuse huile d\'olive du village réputée pour sa pureté.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g9', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1518005020250-675f0f0fd172?auto=format&fit=crop&q=80&w=800', 
+    title: 'Artisanat local', 
+    description: 'Exposition de bijoux en argent émaillé et poteries façonnées à la main par les femmes du village.',
+    category: 'Patrimoine' 
+  },
+  { 
+    id: 'g10', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&q=80&w=800', 
+    title: 'Printemps au village', 
+    description: 'L\'éclosion de la nature transforme les abords du village en un véritable jardin d\'Eden coloré.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g11', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1513584684374-8bdb74838a0f?auto=format&fit=crop&q=80&w=800', 
+    title: 'Rues fleuries', 
+    description: 'Le soin apporté aux ruelles du village, une tradition de propreté qui a valu à Iguersafene son titre national.',
+    category: 'Vie Quotidienne' 
+  },
+  { 
+    id: 'g12', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=800', 
+    title: 'Jeunesse d\'Iguersafene', 
+    description: 'Les enfants du village, avenir et espoir de notre communauté, fiers de leurs racines kabyles.',
+    category: 'Vie Quotidienne' 
+  },
+  { 
+    id: 'g13', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Sages du village', 
+    description: 'Portrait de nos anciens, gardiens de la mémoire collective et de la sagesse ancestrale du village.',
+    category: 'Vie Quotidienne' 
+  },
+  { 
+    id: 'g14', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Nature sauvage', 
+    description: 'La biodiversité préservée autour du village, où la faune et la flore cohabitent avec l\'homme en harmonie.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g15', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Maison traditionnelle', 
+    description: 'Détail d\'une architecture ancienne restaurée avec soin, utilisant la pierre locale et la tuile rouge kabyle.',
+    category: 'Patrimoine' 
+  },
+  { 
+    id: 'g16', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Sentiers de randonnée', 
+    description: 'Le réseau de sentiers entretenus par Tiwizi, permettant aux randonneurs de découvrir les secrets du Djurdjura.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g17', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&q=80&w=800', 
+    title: 'Forêt ancienne', 
+    description: 'Lumière filtrée à travers les cimes centenaires, un spectacle quotidien pour les habitants d\'Iguersafene.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g18', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&q=80&w=800', 
+    title: 'Sources d\'eau', 
+    description: 'L\'une des nombreuses sources d\'eau pure descendant directement des montagnes, gérées avec soin par la communauté.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g19', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&q=80&w=800', 
+    title: 'Festivités', 
+    description: 'Moments de joie collective lors de la fête annuelle, où les chants et la musique traditionnels animent la place.',
+    category: 'Événement' 
+  },
+  { 
+    id: 'g20', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=800', 
+    title: 'Sport au village', 
+    description: 'La jeunesse s\'exprime sur le terrain de sport, lieu de rencontre et de santé pour tous les quartiers.',
+    category: 'Événement' 
+  },
+  { 
+    id: 'g21', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=800', 
+    title: 'Matinée brumeuse', 
+    description: 'Quand les nuages s\'invitent dans le village, créant une atmosphère mystique propre aux hauts sommets.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g22', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1470252649358-96949c7512c9?auto=format&fit=crop&q=80&w=800', 
+    title: 'Fin de journée', 
+    description: 'Le calme revient sur le village alors que le soleil disparaît derrière la ligne d\'horizon dentelée.',
+    category: 'Paysage' 
+  },
+  { 
+    id: 'g23', 
+    type: 'image', 
+    url: 'https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&q=80&w=800', 
+    title: 'Artisanat textile', 
+    description: 'Détail d\'un tissage traditionnel, chaque motif symbolisant un aspect de la vie ou de la nature kabyle.',
+    category: 'Patrimoine' 
+  },
 ];
 
 export const DOCUMENTS: VillageDocument[] = [
@@ -167,10 +395,16 @@ export const VILLAGE_PRESIDENTS = [
 ];
 
 export const HISTORY_MILESTONES = [
-  { year: 'XVIe siècle', event: 'Rattachement au Royaume de Koukou (Ahmed El Kadi). Bastion contre l\'avancée espagnole.' },
-  { year: 'XIXe siècle', event: 'Résistance anti-française avec Fatma N\'Soumer et Cherif Boubaghla. Figure locale : Tikfust (Raab).' },
-  { year: '1957', event: 'Le 4 décembre : Bombardement tragique. 99 martyrs pour la cause nationale.' },
-  { year: '2014', event: 'Sacré village le plus propre de la wilaya de Tizi Ouzou (Concours Rabah Aïssat).' }
+  { year: 'XVIe siècle', event: 'Rattachement au Royaume de Koukou (sous Ahmed El Kadi). Bastion contre l\'avancée espagnole.' },
+  { year: 'Après 1700', event: 'Division de Koukou Ouffela et ère des Ath Kaci. Consolidation de Tajmaât.' },
+  { year: '1854 - 1857', event: 'Résistance armée avec Fatma N\'Soumer et Cherif Boubaghla. Lutte héroïque pour la terre kabyle.' },
+  { year: '1871', event: 'Participation active à l\'insurrection de Mokrani et Cheikh El Haddad.' },
+  { year: '1954 - 1962', event: 'Guerre de Libération. Engagement total dès la première heure pour l\'indépendance.' },
+  { year: '1957', event: 'Le 4 décembre : Bombardement total. Village brûlé, décrété Zone Rouge. Exode vers Akfadou et villages voisins.' },
+  { year: '1994 - 2000', event: 'Résistance citoyenne exemplaire contre le terrorisme. Le village s\'organise pour protéger sa terre et ses habitants.' },
+  { year: '1999', event: 'Modernisation : Achèvement du réseau d\'adduction d\'eau potable dans chaque foyer. Fin du calvaire des fontaines publiques pour les femmes.' },
+  { year: '2001', event: 'Printemps Noir : Le village se soulève pour la dignité. Le 12 mai, le jeune Slimane Raab tombe en martyr.' },
+  { year: '2014', event: 'Consécration : Village le plus propre de Tizi Ouzou. Renaissance par l\'écologie.' }
 ];
 
 export const ASSOCIATIONS: Association[] = [
